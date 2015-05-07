@@ -1,108 +1,102 @@
 function main() {
-	angleServ1=0; angleServInitial1=0; angleServLimit1=360; // - против часовой 
-	angleServ2=0; angleServInitial2=0; angleServLimit2=360; // + по часовой
-	angleServ3=0; angleServInitial3=0; angleServLimit3=360;
-	angleServ4=0; angleServInitial4=0; angleServLimit4=360;
-	angleServ5=0; angleServInitial5=0; angleServLimit5=180;
-	angleServ6=0; angleServInitial6=0; angleServLimit6=360;
-
-	shoulder1=0.0867;
-	shoulder2=0.1067;
-	shoulder3=0.1066;
-	shoulder4=0.1074;
-	
-	captureAngle = 0;
-
-	x=0.210;
-	y=0.210;
-	z=0.030;
-
+	//system::echo("Enter the angle:");
+	//a=system::input();
+	//system::echo("a=", a,"\n");
+	angleServ1=0; angleStart1=0; angleServStart1=0; angleServRange1=180;  	// angleServStart	значение угла на сервоприводе в начальном положении   	
+	angleServ2=0; angleStart2=0; angleServStart2=0; angleServRange2=180; 	// angleStart	угол от гориз. до начального положения сервопривода
+	angleServ3=0; angleStart3=90; angleServStart3=0; angleServRange3=180;  	// angleServRange допустимое изменение угла на сервоприводе от угла в начальном положении 
+	angleServ4=0; angleStart4=180; angleServStart4=0; angleServRange4=180;  
+	angleServ5=0; angleStart5=270; angleServStart5=0; angleServRange5=180;  				
+	angleServ6=0; angleStart6=0; angleServStart6=10; angleServRange6=180; 
+	shoulder1=30;
+	shoulder2=80;
+	shoulder3=80;
+	shoulder4=200;
+	captureAngle=-20;
+	x=150;
+	y=150; 
+	z=75;
 	radiansToDegrees=180/3.14159265358979323846;
 	degreesToRadians=3.14159265358979323846/180;
-	
-	if (z > shoulder1){
-		distanceToDetails = z - shoulder1;
-		tempAngleC = captureAngle + 90 - math::atan(math::sqrt((x * x) + (y * y)) / distanceToDetails) * radiansToDegrees;
-		tempAngleB = math::atan(distanceToDetails / math::sqrt((x * x) + (y * y))) * radiansToDegrees;
-	} else {
-		distanceToDetails = shoulder1 - z;
-		tempAngleC = captureAngle - math::atan(distanceToDetails / math::sqrt((x * x) + (y * y))) * radiansToDegrees;
-		tempAngleB = - (90 - math::atan(math::sqrt((x * x) + (y * y)) / distanceToDetails) * radiansToDegrees);
-	}
-	
-	lengthTempAQ = math::sqrt(math::pow(distanceToDetails, 2) + (x * x) + (y * y));
-	lengthTempAD = math::sqrt(math::pow(lengthTempAQ, 2) + math::pow(shoulder4, 2) - 2 * shoulder4 * lengthTempAQ * math::cos(tempAngleC * degreesToRadians));
-	
-	if (lengthTempAD <= (shoulder2 + shoulder3)) {
-		angleServ4 = math::acos((math::pow(shoulder2, 2) + math::pow(shoulder3, 2) - math::pow(lengthTempAD,2 )) / (2 * shoulder2 * shoulder3)) * radiansToDegrees;
-		if (angleServ4 >= angle(angleServInitial4,angleServLimit4)) {
-			angleADQ = math::acos((math::pow(lengthTempAD, 2) + math::pow(lengthTempAQ, 2) - math::pow(shoulder4, 2)) / (2 * lengthTempAQ * lengthTempAD)) * radiansToDegrees;
-			angleHDA = math::asin(shoulder2 * math::sin(angleServ4 * degreesToRadians) / lengthTempAD) * radiansToDegrees;
-			angleServ3 = 180 - tempAngleC - angleADQ + angleHDA;
-			if (angleServ3 >= angle(angleServInitial3, angleServLimit3)) {
-				angleServ5 = 90 + tempAngleB + 180 - angleServ4 + angleADQ - angleHDA;
-				if (angleServ5 >= angle(angleServInitial5, angleServLimit5)) {
-					angleServ6 = math::atan(math::abs(x) / math::abs(y)) * radiansToDegrees;
-					if ((x >= 0) && (y >= 0)) {
-						angleServ6 = angleServ6;
-					} else {
-						if ((x <= 0) && (y >= 0)){
-							angleServ6 = 360 - angleServ6;
-						} else {
-							if ((x >= 0) && (y <= 0)){
-								angleServ6 = 180 - angleServ6;
-							} else {
-								angleServ6 = 180 + angleServ6;
-							}
-						}
-					}
-				} else {
-					system::echo("error::angleServ3 = ", angleServ5, " < ", angle(angleServInitial5, angleServLimit5));
-				}			
-			} else {
-				system::echo("error::angleServ3 = ", angleServ3, " < ", angle(angleServInitial3, angleServLimit3));
+	if(z>shoulder1){
+		distanceToDetails=z-shoulder1;
+		tempAngleC=captureAngle+90-math::atan(math::sqrt(x*x+y*y)/distanceToDetails)*radiansToDegrees;
+		tempAngleB=math::atan(distanceToDetails/math::sqrt(x*x+y*y))*radiansToDegrees;	
+	}else{
+		distanceToDetails=shoulder1-z;
+		tempAngleC=captureAngle-math::atan(distanceToDetails/math::sqrt(x*x+y*y))*radiansToDegrees;
+		tempAngleB=-(90-math::atan(math::sqrt(x*x+y*y)/distanceToDetails)*radiansToDegrees);
+	}	
+	lengthTempAQ=math::sqrt(distanceToDetails*distanceToDetails+x*x+y*y);
+	lengthTempAD=math::sqrt(lengthTempAQ*lengthTempAQ+shoulder4*shoulder4-2*shoulder4*lengthTempAQ*math::cos(tempAngleC*degreesToRadians));
+	angleServ4=math::acos((shoulder2*shoulder2+shoulder3*shoulder3-lengthTempAD*lengthTempAD)/(2*shoulder2*shoulder3))*radiansToDegrees;
+	angleADQ=math::acos((lengthTempAD*lengthTempAD+lengthTempAQ*lengthTempAQ-shoulder4*shoulder4)/(2*lengthTempAQ*lengthTempAD))*radiansToDegrees;
+	angleHDA=math::asin(shoulder2*math::sin(angleServ4*degreesToRadians)/lengthTempAD)*radiansToDegrees;
+	angleServ3=180-tempAngleC-angleADQ+angleHDA;
+	angleServ5=90+tempAngleB+180-angleServ4+angleADQ-angleHDA;		
+	if((x>=0) && (y>=0)){
+		angleServ6=math::atan(math::abs(x)/math::abs(y))*radiansToDegrees;
+	}else{
+		if((x<=0)&&(y>=0)){
+			angleServ6=(360-math::atan(math::abs(x)/math::abs(y))*radiansToDegrees);
+		}else{
+			if((x>=0)&&(y<=0)){
+				angleServ6=(180-math::atan(math::abs(x)/math::abs(y))*radiansToDegrees);
+			}else{
+				angleServ6=180+math::atan(math::abs(x)/math::abs(y))*radiansToDegrees;
 			}
-		} else {
-			system::echo("error:angleServ4=", angleServ4, " < ", angle(angleServInitial4, angleServLimit4));
 		}
-	} else {
-		system::echo("wrong angle or X or Y!!!\n");	
 	}
-	system::echo("\n angleServ1 = ", finalAngle(angleServInitial1, angleServ1));
-	system::echo("\n angleServ2 = ", finalAngle(angleServInitial2, angleServ2));
-	system::echo("\n angleServ3 = ", finalAngle(angleServInitial3, angleServ3));
-	system::echo("\n angleServ4 = ", finalAngle(angleServInitial4, angleServ4));
-	system::echo("\n angleServ5 = ", finalAngle(angleServInitial5, angleServ5));
-	system::echo("\n angleServ6 = ", angleServ6,"\n");
-		
-	//@r = robot_servo;
-	//@r->move_servo(0,angleServ1);
-	//@r->move_servo(1,angleServ2);
-	//@r->move_servo(2,angleServ3-90);
-	//@r->move_servo(3,278-angleServ4);
-	//@r->move_servo(4,angleServ5+15);
-	//@r->move_servo(5,angleServ6);
-}
-
-function angle(angle, limit) {
-	if(angle >= 0){
-		if ((limit - angle) >= 180) {
-			return 0;
-		} else {
-			return (180 - (limit - angle));
-		}
-	} else {
-		if (math::abs(angle) >= 180){
-			return 0;
-		} else {
-			return (180 - math::abs(angle));
-		}
-	} 
-}
-function finalAngle(angle, angleServ) {
-	if (angle >= 0) {
-		return ((180 - angleServ) + angle);
-	} else {
-		return (angle - (180 - angleServ));
+	system::echo("\n The algotithm:");
+	system::echo("\n angleServ1=",angleServ1);
+	system::echo("\n angleServ2=",angleServ2);
+	system::echo("\n angleServ3=",angleServ3);
+	system::echo("\n angleServ4=",angleServ4);
+	system::echo("\n angleServ5=",angleServ5);
+	system::echo("\n angleServ6=",angleServ6,"\n");
+	
+	if(lengthTempAD<=(shoulder2+shoulder3)){
+		system::echo("\n For servo motor:");
+		system::echo("\n angleServ1=",angleServ1);
+		system::echo("\n angleServ2=",angleServ2);
+		system::echo("\n angleServ3=",finalAngle(angleServ3,angleStart3,angleServStart3,angleServRange3,3));
+		system::echo("\n angleServ4=",finalAngle(angleServ4,angleStart4,angleServStart4,angleServRange4,4));
+		system::echo("\n angleServ5=",finalAngle(angleServ5,angleStart5,angleServStart5,angleServRange5,5));
+		system::echo("\n angleServ6=",finalAngle(angleServ6,angleStart6,angleServStart6,angleServRange6,6),"\n");	
+	}else{
+		system::echo("\n wrong angle or X or Y!!!","\n");	
 	}
+		//@r = robot_servo;
+		//@r->move_servo(0,angleServ1);
+		//@r->move_servo(1,angleServ2);
+		//@r->move_servo(2,angleServ3);
+		//@r->move_servo(3,angleServ4);
+		//@r->move_servo(4,angleServ5);
+		//@r->move_servo(5,angleServ6);
+}
+function finalAngle(angleServ, anglStart, startServ, angleRange, number) {
+	temp=math::abs(angleServ-anglStart);
+    if (angleRange >= 360) {
+		if ((360-temp) < anglStart) {
+			return startServ+temp;
+		} else {
+			return startServ+(360-temp);
+		} 
+    } else {		
+        if ((360-temp) > anglStart) {
+            if ((startServ+temp) <= angleRange) {
+                return startServ+temp;
+            } else {
+				system::echo("\n error::angleServ",number,"=",(startServ+temp)," > ",angleRange);
+                return 0;
+            }
+        } else {
+            if ((startServ+360-temp) <= angleRange) {
+                return startServ+360-temp;
+            } else {
+				system::echo("\n error::angleServ",number,"=",(startServ+360-temp)," > ",angleRange);
+                return 0;
+            }
+        }
+    }
 }

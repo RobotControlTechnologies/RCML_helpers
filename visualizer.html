@@ -1,0 +1,166 @@
+<html>
+<head>
+<style type="text/css">
+.canvas {
+	border: 4px solid #ccc;
+}
+.relative{
+	position: relative;
+	height: 100%;
+}
+.left{
+	width:240px;
+	top: 0px;
+	left: 0px;
+	bottom:0px;
+	position: absolute;
+}
+.right{
+	top: 10px;
+	left: 240px;
+	right:0px;
+	bottom:0px;
+	position: absolute;
+}
+form label[style],form div[style], span{
+	font-weight: bold;
+}
+label.pointer{cursor:pointer;}
+a#btn1, a#pole{
+	color: #fff;
+	text-decoration: none;
+	user-select: none;
+	background: rgb(212,75,56);
+	padding: .7em 1.5em;
+	outline: none;
+	margin: 3px;
+	cursor:pointer;
+}
+a#btn1:hover, a#pole:hover{ background: rgb(232,95,76); }
+a#btn1:active,  a#pole:active{ background: rgb(152,15,0); }
+</style>
+<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+var colored=["black","blue","green","red","fuchsia","darkorange","deepskyblue"], flag=0,oX=0, oY=0; 
+function check(){
+	var check = document.querySelector("#cb1");
+	if (check.checked) {
+		for(i = 1; i <= 15; i++){
+			cat = document.getElementById("cat"+i);
+			cat.style.display = "block";
+			reset();
+		}
+		flag=1;
+	}else{
+		flag=0; 
+		for(i = 1; i <= 15; i++){
+			cat = document.getElementById("cat"+i);
+			cat.style.display = "none";
+			reset();
+	  	$('#alignText').html("");
+		}
+	}
+}
+function init() {
+	reset();
+	var context = $("#a").get(0).getContext("2d");
+	for (var x = 0.5; x < oX; x += 10) {
+		context.moveTo(x, 0);
+		context.lineTo(x, oY);
+	}
+	for (var y = 0.5; y < oY; y += 10) {
+	context.moveTo(0, y);
+	context.lineTo(oX, y);
+	}
+	context.strokeStyle = "#eee";
+	context.stroke();
+	context.translate(oX/2, oY);
+	context.rotate(-90 * Math.PI / 180);
+	context.fillRect(0, 0, $("#shoulder1").val(), 2);
+	for (var i = 1; i <= 3; i++) {
+		context.translate($("#shoulder" + i).val(), 0);
+		context.rotate(angl(180-$("#angleStart"+i).val(),$("#angleServStart"+i).val(),$("#angle"+i).val(),$("#angleServRange"+i).val(),$("#rotate"+i).prop("checked"))* Math.PI / 180);
+		context.fillStyle=colored[i];
+		context.fillRect(0, 0, $("#shoulder" + (i + 1)).val(), 2);	
+		context.beginPath(); 
+		context.strokeStyle = colored[i+3];
+		if(flag==0){
+			context.arc(0, 0, 15,0,$("#angle"+i).val() * Math.PI / 180, false);
+		}else{
+			if($("#rotate"+i).prop("checked")==1){
+				context.arc(0, 0, 15,(+$("#angleStart"+i).val()- +$("#angle"+i).val()) * Math.PI / 180,0, true);
+			}else{			
+				context.arc(0, 0, 15,(+$("#angleStart"+i).val()+ +$("#angle"+i).val())* Math.PI / 180,0, false);
+			}
+		}		
+		context.lineWidth = 3; 
+		context.stroke();
+	}
+}
+function angl(anglCheck, startAngl, angle, Range, rotateAngl){
+	if(flag==0){
+		return 180- +angle;
+	}else{
+		if (+angle > +Range) alert("angle=" + angle + ", I came out of range "+Range);
+		if(rotateAngl==1){
+			return +anglCheck+ (+angle- +startAngl);
+		}else{
+			return +anglCheck- +(+angle- +startAngl);
+		}
+	}	
+}
+$(function(){
+	$("#btn1").click(function(){
+		init();
+	});
+});
+function reset(){
+	$("#a").attr("width", oX);
+	$("#a").attr("height", oY);
+}
+$(document).ready(function(){
+	oX=0.8*$("#sizePole").width();
+	oY=0.55*$("#sizePole").height();
+	$("#a").attr("width", oX);
+	$("#a").attr("height", oY);
+});
+</script>
+<div class="relative">
+	<div class="left" action="date">
+		<form>
+	    <label class="pointer"><input type="checkbox" id='cb1' onClick="check()"/>углы вычисленные алгоритмом</label><br />
+	    <label style=""><input type="text" id="shoulder1" size="3" value="30" style='color: rgb(0, 0, 0);'/> shoulder1</label>
+	    <label style='color:fuchsia;'><input type="text" id="angle1" size="3" value="34" style='color: fuchsia;'/> угол_1</label>
+	    <div id='cat1' style='display: none;'><input type="text" id="angleServStart1" size="3" value="0"/> angleServStart1</div>
+	    <div id='cat2' style='display: none;'><input type="text" id="angleStart1" size="3" value="270"/> angleStart1</div>
+	    <div id='cat3' style='display: none;'><input type="text" id="angleServRange1" size="3" value="180"/> angleServRange1 </div>
+		<div id='cat4' style='display: none;'><label class="pointer"><input type="checkbox" id='rotate1' checked/> по часовой</label><hr /></div><br />
+	    <label style='color: blue;'><input type="text" id="shoulder2" size="3" value="80" style='color:blue;'/> shoulder2</label>
+	    <label style='color: darkorange;'><input type="text" id="angle2" size="3" value="156" style='color: darkorange;'/>  угол_2</label>
+	    <div id='cat5' style='display: none;'><input type="text" id="angleServStart2" size="3" value="0"/> angleServStart2</div>
+	    <div id='cat6' style='display: none;'><input type="text" id="angleStart2" size="3" value="180"/> angleStart2  </div>
+	    <div id='cat7' style='display: none;'><input type="text" id="angleServRange2" size="3" value="180"/> angleServRange2 </div>
+		<div id='cat8' style='display: none;'><label class="pointer"><input type="checkbox" id='rotate2' checked/> по часовой</label><hr /></div><br />
+	    <label style='color:green;'><input type="text" id="shoulder3" size="3" value="80" style='color:green;'/> shoulder3</label>
+	    <label style='color: deepskyblue;'><input type="text" id="angle3" size="3" value="120" style='color: deepskyblue;'/> угол_3</label>
+	    <div id='cat9' style='display: none;'><input type="text" id="angleServStart3" size="3" value="0"/> angleServStart3 </div>
+	    <div id='cat10' style='display: none;'><input type="text" id="angleStart3" size="3" value="90"/> angleStart3 </div>
+	    <div id='cat11' style='display: none;'><input type="text" id="angleServRange3" size="3" value="180"/> angleServRange3 </div>
+		<div id='cat12' style='display: none;'><label class="pointer"><input type="checkbox" id='rotate3' checked/> по часовой</label><hr /></div><br />
+	    <label style='color:red;'><input type="text" id="shoulder4" size="3" value="200" style='color: red;'/> shoulder4</label> <br /><br />
+	    <a type="buttom" id="btn1" />Построить</a>
+		</form><br /><br />
+		<span id='cat13' style='display: none;'>1. angleServStart -значение угла на сервоприводе в начальном положении </span>
+		<span id='cat14' style='display: none;'>2. angleStart - угол от гориз. до начального положения сервопривода </span>
+		<span id='cat15' style='display: none;'>3. angleServRange - допустимое изменение угла на сервоприводе от угла в начальном положении </span>
+	</div> 
+	<div id="sizePole" class="right">
+		<div  id="res">
+			<canvas id="a" class="canvas" >вы видите это сообщение, потому что ваш браузер не поддерживает canvas</canvas>
+		</div>
+	</div>
+</div>
+</body>
+</html>
