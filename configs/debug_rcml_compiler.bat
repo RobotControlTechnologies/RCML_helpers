@@ -1,0 +1,1 @@
+gdb -args ".\rcml_compiler_debug.exe" test.rcml test.rcml.pc test.rcml.dbg
