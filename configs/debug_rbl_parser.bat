@@ -1,0 +1,1 @@
+gdb -args ".\rbl_parser_debug.exe" test.rbl test.rcml

@@ -1,0 +1,1 @@
+gdb -args ".\rcml_intepreter_debug.exe" ".\test.rcml"				

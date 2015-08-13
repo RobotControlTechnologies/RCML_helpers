@@ -1,1 +1,1 @@
-# 6DOF_move_algorithm
+Help batch and config files for RCML environment.
