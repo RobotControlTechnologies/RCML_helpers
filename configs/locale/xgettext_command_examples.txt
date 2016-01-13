@@ -1,0 +1,10 @@
+#commands without .exe in Linux
+
+# in rcml source directory
+xgettext.exe -f list_of_translated_files.txt  -o rcml.pot --force-po -k_T
+
+#next create .po file
+msginit.exe --no-translator -l ru_RU.UTF-8 -o rcml.po -i rcml.pot
+
+#if don't use poEdit or anaogs:
+msgfmt.exe -o rcml.mo rcml.po

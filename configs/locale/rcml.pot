@@ -1,23 +1,21 @@
-# Russian translations for PACKAGE package.
-# Copyright (C) 2016 THE PACKAGE'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2016.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-13 08:19+0000\n"
-"PO-Revision-Date: 2016-01-13 13:36+0500\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: ru\n"
+"POT-Creation-Date: 2016-01-13 13:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CP1251\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.8.6\n"
 
 #: rcml_compiler/classes.cpp:65
 msgid "Too many registers used!"
@@ -56,10 +54,6 @@ msgstr ""
 msgid "Use \"IID\" flag or remove \"export\" keyword."
 msgstr ""
 
-#: rcml_compiler/classes.cpp:238 rcml_compiler/classes.cpp:802
-msgid "main"
-msgstr ""
-
 #: rcml_compiler/classes.cpp:244
 #, c-format
 msgid "Dublicate user function: %s"
@@ -84,20 +78,8 @@ msgstr ""
 msgid "Try: missing arguments!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:509
-msgid "error_default"
-msgstr ""
-
 #: rcml_compiler/classes.cpp:513
 msgid "Try: muissing type argument!"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:515
-msgid "error_time_limit"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:517
-msgid "error_try_count"
 msgstr ""
 
 #: rcml_compiler/classes.cpp:520
@@ -111,10 +93,6 @@ msgstr ""
 
 #: rcml_compiler/classes.cpp:530
 msgid "Try: invalid option argument!"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:628
-msgid "robot_"
 msgstr ""
 
 #: rcml_compiler/classes.cpp:630
@@ -150,36 +128,16 @@ msgstr ""
 msgid "The call function with the package flag is prohibited!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:822
-msgid "system"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:826
-msgid "input"
-msgstr ""
-
 #: rcml_compiler/classes.cpp:828
 msgid "Too many arguments for \"input\" function!"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:831
-msgid "echo"
 msgstr ""
 
 #: rcml_compiler/classes.cpp:833
 msgid "Missing arguments for \"echo\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:836
-msgid "set"
-msgstr ""
-
 #: rcml_compiler/classes.cpp:838
 msgid "Invalid count arguments for \"set\" function!"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:845 rcml_compiler/classes.cpp:1037
-msgid "behavior"
 msgstr ""
 
 #: rcml_compiler/classes.cpp:850
@@ -195,20 +153,12 @@ msgstr ""
 msgid "Invalid option argument for \"set\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:860
-msgid "sleep"
-msgstr ""
-
 #: rcml_compiler/classes.cpp:862
 msgid "Invalid count arguments for \"sleep\" function!"
 msgstr ""
 
 #: rcml_compiler/classes.cpp:868
 msgid "Invalid argument for \"sleep\" function!"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:872
-msgid "hand_control"
 msgstr ""
 
 #: rcml_compiler/classes.cpp:875
@@ -231,10 +181,6 @@ msgstr ""
 #: rcml_compiler/classes.cpp:907
 #, c-format
 msgid "Invalid argument by num %d for \"hand_control\" function!"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:914
-msgid "send_package"
 msgstr ""
 
 #: rcml_compiler/classes.cpp:917
@@ -318,8 +264,7 @@ msgstr ""
 msgid "Line: %d. Can't find robot for execute the hand control "
 msgstr ""
 
-#: rcml_compiler/classes.cpp:1119 rcml_compiler/config.cpp:106
-#: rcml_compiler/config.cpp:124
+#: rcml_compiler/classes.cpp:1119
 msgid "function"
 msgstr ""
 
@@ -377,32 +322,13 @@ msgstr ""
 msgid "After process calls"
 msgstr ""
 
-#: rcml_compiler/store.cpp:212 rcml_compiler/main.cpp:224
-msgid "wb"
-msgstr ""
-
 #: rcml_compiler/store.cpp:477
 #, c-format
 msgid "Used robot modules: %d\n"
 msgstr ""
 
-#: rcml_compiler/store.cpp:489
-#, c-format
-msgid "%d->%d %-32.32s %d\n"
-msgstr ""
-
 #: rcml_compiler/store.cpp:497
 msgid "Used function modules: "
-msgstr ""
-
-#: rcml_compiler/store.cpp:498 rcml_compiler/store.cpp:516
-#, c-format
-msgid "%u\n"
-msgstr ""
-
-#: rcml_compiler/store.cpp:509 rcml_compiler/store.cpp:527
-#, c-format
-msgid "%d %-32.16s\n"
 msgstr ""
 
 #: rcml_compiler/store.cpp:515
@@ -412,21 +338,6 @@ msgstr ""
 #: rcml_compiler/store.cpp:533
 #, c-format
 msgid "Used libs: %d\n"
-msgstr ""
-
-#: rcml_compiler/store.cpp:542
-#, c-format
-msgid "  %s - %d -> %d\n"
-msgstr ""
-
-#: rcml_compiler/store.cpp:550
-#, c-format
-msgid "    %s (robot) - %d -> %d\n"
-msgstr ""
-
-#: rcml_compiler/store.cpp:553
-#, c-format
-msgid "    %s (user) - %d -> %d\n"
 msgstr ""
 
 #: rcml_compiler/store.cpp:572
@@ -453,42 +364,14 @@ msgstr ""
 msgid "  robot(%d) axis("
 msgstr ""
 
-#: rcml_compiler/store.cpp:651 rcml_compiler/store.cpp:677
-#, c-format
-msgid "%d "
-msgstr ""
-
-#: rcml_compiler/store.cpp:655
-msgid ")\n"
-msgstr ""
-
 #: rcml_compiler/store.cpp:669
 #, c-format
 msgid "candidate list %d: "
 msgstr ""
 
-#: rcml_compiler/store.cpp:681 rcml_compiler/pcode_process.cpp:185
-#: rcml_compiler/pcode_process.cpp:256 rcml_compiler/pcode_process.cpp:258
-#: rcml_compiler/repository.cpp:165 rcml_intepreter/main.cpp:186
-msgid "\n"
-msgstr ""
-
 #: rcml_compiler/store.cpp:689
 #, c-format
 msgid "used strings: %d\n"
-msgstr ""
-
-#: rcml_compiler/store.cpp:696
-#, c-format
-msgid "%d->%d: %s\n"
-msgstr ""
-
-#: rcml_compiler/classes_include.cpp:24
-msgid "[a-zA-Z_][a-zA-Z0-9_]*"
-msgstr ""
-
-#: rcml_compiler/classes_include.cpp:25
-msgid "[[:space:]]+"
 msgstr ""
 
 #: rcml_compiler/classes_include.cpp:36
@@ -500,35 +383,6 @@ msgstr ""
 #, c-format
 msgid "Line: %d. Syntax error in define!"
 msgstr ""
-
-#: rcml_compiler/main.cpp:92 rcml_intepreter/main.cpp:278
-msgid "-debug"
-msgstr ""
-
-#: rcml_compiler/main.cpp:96 rcml_intepreter/main.cpp:269
-msgid "-version"
-msgstr ""
-
-#: rcml_compiler/main.cpp:97
-#, c-format
-msgid "RCML compiler v1.0.6 - %s %s\n"
-msgstr "RCML компилятор  v1.0.6 - %s %s\n"
-
-#: rcml_compiler/main.cpp:98 rcml_intepreter/main.cpp:271
-msgid "API compability:\n"
-msgstr "API совместимость:\n"
-
-#: rcml_compiler/main.cpp:99
-msgid "\t\tRobot modules: 000, 100:\n"
-msgstr "\t\tМодули роботов: 000, 100:\n"
-
-#: rcml_compiler/main.cpp:100
-msgid "\t\tFunction modules: 000, 100:\n"
-msgstr "\t\tМодули функций: 000, 100:\n"
-
-#: rcml_compiler/main.cpp:101
-msgid "\t\tControl modules: 000, 100:\n"
-msgstr "\t\tМодули управления: 000, 100:\n"
 
 #: rcml_compiler/main.cpp:114 rcml_intepreter/main.cpp:293
 #, c-format
@@ -549,10 +403,6 @@ msgstr ""
 
 #: rcml_compiler/main.cpp:129 rcml_intepreter/main.cpp:301
 msgid "Invalid arguments!"
-msgstr ""
-
-#: rcml_compiler/main.cpp:133 rcml_intepreter/main.cpp:311
-msgid "config.ini"
 msgstr ""
 
 #: rcml_compiler/main.cpp:141
@@ -596,276 +446,30 @@ msgstr ""
 
 #: rcml_compiler/main.cpp:251
 msgid "Programm successful compiled!\n"
-msgstr "Программа успешно скомпилирована!\n"
+msgstr ""
 
 #: rcml_compiler/main.cpp:253 rcml_intepreter/main.cpp:346
 msgid "The error(s) occurred: "
 msgstr ""
 
-#: rcml_compiler/config.cpp:47
-msgid "_modules/"
+#: rcml_compiler/config.cpp:70
+msgid "locale setted incorrectly! Try to add .UTF-8 to locale"
 msgstr ""
 
-#: rcml_compiler/config.cpp:49
-msgid "/"
-msgstr ""
-
-#: rcml_compiler/config.cpp:51 rcml_compiler/repository.cpp:203
-msgid "_module."
-msgstr ""
-
-#: rcml_compiler/config.cpp:53 rcml_compiler/repository.cpp:205
-msgid "dll"
-msgstr ""
-
-#: rcml_compiler/config.cpp:55 rcml_compiler/repository.cpp:207
-msgid "so"
-msgstr ""
-
-#: rcml_compiler/config.cpp:66 rcml_compiler/repository.cpp:40
-#: rcml_compiler/repository.cpp:183
-msgid "robot_modules"
-msgstr ""
-
-#: rcml_compiler/config.cpp:66 rcml_compiler/config.cpp:100
-#: rcml_compiler/config.cpp:131
-msgid "module"
-msgstr ""
-
-#: rcml_compiler/config.cpp:75 rcml_compiler/config.cpp:93
-msgid "robot"
-msgstr ""
-
-#: rcml_compiler/config.cpp:93 rcml_compiler/config.cpp:124
-#: rcml_compiler/config.cpp:154
+#: rcml_compiler/config.cpp:100 rcml_compiler/config.cpp:131
+#: rcml_compiler/config.cpp:161
 #, c-format
 msgid "Error in %s module %s:"
 msgstr ""
 
-#: rcml_compiler/config.cpp:100 rcml_compiler/repository.cpp:43
-#: rcml_compiler/repository.cpp:186
-msgid "function_modules"
-msgstr ""
-
-#: rcml_compiler/config.cpp:131 rcml_compiler/repository.cpp:46
-#: rcml_compiler/repository.cpp:189
-msgid "control_modules"
-msgstr ""
-
-#: rcml_compiler/config.cpp:136 rcml_compiler/config.cpp:154
-msgid "control"
-msgstr ""
-
-#: rcml_compiler/config.cpp:161
-msgid "lib_search_paths"
-msgstr ""
-
-#: rcml_compiler/config.cpp:161
-msgid "path"
-msgstr ""
-
-#: rcml_compiler/config.cpp:169
+#: rcml_compiler/config.cpp:176
 #, c-format
 msgid "Cant find lib search path: %s"
 msgstr ""
 
-#: rcml_compiler/config.cpp:173
+#: rcml_compiler/config.cpp:180
 #, c-format
 msgid "Lib search path is not directory: %s"
-msgstr ""
-
-#: rcml_compiler/config.cpp:185
-msgid "repository"
-msgstr ""
-
-#: rcml_compiler/config.cpp:185
-msgid "url"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:56 rcml_compiler/pcode_process.cpp:58
-#, c-format
-msgid " %dd"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:62 rcml_compiler/pcode_process.cpp:64
-#, c-format
-msgid " %ff"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:73
-msgid "hlt"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:76
-msgid "jz"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:79
-msgid "mov"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:82
-msgid "add"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:85
-msgid "sub"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:88
-msgid "mul"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:91
-msgid "div"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:94
-msgid "rem"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:97
-msgid "eq"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:100
-msgid "ne"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:103
-msgid "ge"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:106
-msgid "le"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:109
-msgid "gt"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:112
-msgid "lt"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:115
-msgid "conj"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:118
-msgid "disj"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:121
-msgid "brk"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:124
-msgid "cnt"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:127
-msgid "call"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:130
-msgid "start"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:133
-msgid "ret"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:136
-msgid "pop"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:139
-msgid "push"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:142
-msgid "nope"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:145
-msgid "robot_call"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:148
-msgid "robot_new"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:151
-msgid "robot_free"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:154
-msgid "system_call"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:157
-msgid "throw_exception"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:160
-msgid "try_block"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:163
-msgid "try_block_end"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:166
-msgid "loop_block"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:169
-msgid "loop_block_end"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:172
-msgid "MAGIC! O_O"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:176 rcml_compiler/pcode_process.cpp:179
-#, c-format
-msgid "%-16.16s (%d) %u %u %u"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:191 rcml_compiler/pcode_process.cpp:193
-#: rcml_compiler/pcode_process.cpp:203 rcml_compiler/pcode_process.cpp:205
-#: rcml_compiler/pcode_process.cpp:227 rcml_compiler/pcode_process.cpp:229
-msgid "   "
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:197 rcml_compiler/pcode_process.cpp:199
-#: rcml_compiler/pcode_process.cpp:209 rcml_compiler/pcode_process.cpp:211
-#: rcml_compiler/pcode_process.cpp:221 rcml_compiler/pcode_process.cpp:223
-#: rcml_compiler/pcode_process.cpp:233 rcml_compiler/pcode_process.cpp:235
-#, c-format
-msgid "%u-"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:215 rcml_compiler/pcode_process.cpp:217
-msgid "   ||   "
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:242 rcml_compiler/pcode_process.cpp:244
-#: rcml_compiler/pcode_process.cpp:269 rcml_compiler/pcode_process.cpp:271
-#, c-format
-msgid "***** %s *****\n"
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:250 rcml_compiler/pcode_process.cpp:252
-#: rcml_compiler/pcode_process.cpp:277 rcml_compiler/pcode_process.cpp:279
-#, c-format
-msgid "%d."
-msgstr ""
-
-#: rcml_compiler/pcode_process.cpp:284 rcml_compiler/pcode_process.cpp:286
-#, c-format
-msgid "r(%d)\n"
 msgstr ""
 
 #: rcml_compiler/pcode_process.cpp:474
@@ -920,8 +524,16 @@ msgstr ""
 msgid "Repository not enabled!"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:33
-msgid "-----------------------------------\n"
+#: rcml_compiler/repository.cpp:40 rcml_compiler/repository.cpp:183
+msgid "robot_modules"
+msgstr ""
+
+#: rcml_compiler/repository.cpp:43 rcml_compiler/repository.cpp:186
+msgid "function_modules"
+msgstr ""
+
+#: rcml_compiler/repository.cpp:46 rcml_compiler/repository.cpp:189
+msgid "control_modules"
 msgstr ""
 
 #: rcml_compiler/repository.cpp:55 rcml_compiler/repository.cpp:197
@@ -992,7 +604,7 @@ msgstr ""
 
 #: rcml_compiler/repository.cpp:122
 msgid "success\n"
-msgstr "успешно\n"
+msgstr ""
 
 #: rcml_compiler/repository.cpp:130
 #, c-format
@@ -1013,17 +625,16 @@ msgstr ""
 msgid "Finded next %s modules:\n"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:150
-#, c-format
-msgid "%d. %s (%s)\n"
-msgstr ""
-
 #: rcml_compiler/repository.cpp:154
 msgid "Input number of module, that will be loaded (or zero for "
 msgstr ""
 
 #: rcml_compiler/repository.cpp:155
 msgid "abort loading): "
+msgstr ""
+
+#: rcml_compiler/repository.cpp:165
+msgid "\n"
 msgstr ""
 
 #: rcml_compiler/repository.cpp:168
@@ -1044,30 +655,9 @@ msgstr ""
 msgid "Cant create the debug socket. Error code: %d\n"
 msgstr ""
 
-#: rcml_intepreter/debug.cpp:67
-msgid "127.0.0.1"
-msgstr ""
-
 #: rcml_intepreter/debug.cpp:71
 #, c-format
 msgid "Cant connect to the debug socket. Error code: %d\n"
-msgstr ""
-
-#: rcml_intepreter/debug.cpp:79
-msgid "#start:"
-msgstr ""
-
-#: rcml_intepreter/debug.cpp:85
-msgid "#line:"
-msgstr ""
-
-#: rcml_intepreter/debug.cpp:87
-#, c-format
-msgid "%u"
-msgstr ""
-
-#: rcml_intepreter/debug.cpp:98
-msgid "#end"
 msgstr ""
 
 #: rcml_intepreter/debug.cpp:103
@@ -1083,25 +673,9 @@ msgstr ""
 msgid "The debug socket error with input buffer!"
 msgstr ""
 
-#: rcml_intepreter/debug.cpp:130
-msgid "next"
-msgstr ""
-
 #: rcml_intepreter/debug.cpp:146
 #, c-format
 msgid "Error. Close debug socket. Code: %d\n"
-msgstr ""
-
-#: rcml_intepreter/main.cpp:72
-msgid "pc"
-msgstr ""
-
-#: rcml_intepreter/main.cpp:76 module_wrapper/pcode_wrapper.cpp:86
-msgid "rb"
-msgstr ""
-
-#: rcml_intepreter/main.cpp:97
-msgid ".pc"
 msgstr ""
 
 #: rcml_intepreter/main.cpp:126
@@ -1128,18 +702,8 @@ msgstr ""
 msgid "Parameters not specified:\n"
 msgstr ""
 
-#: rcml_intepreter/main.cpp:179
-#, c-format
-msgid "  %s\n"
-msgstr ""
-
 #: rcml_intepreter/main.cpp:183
 msgid "unknown parameters: \n"
-msgstr ""
-
-#: rcml_intepreter/main.cpp:185
-#, c-format
-msgid "%s "
 msgstr ""
 
 #: rcml_intepreter/main.cpp:222
@@ -1172,31 +736,6 @@ msgid ""
 "  robo_interpreter <program_name> <debug>"
 msgstr ""
 
-#: rcml_intepreter/main.cpp:270
-#, c-format
-msgid "RCML interpreter v1.0.6 - %s %s\n"
-msgstr ""
-
-#: rcml_intepreter/main.cpp:272
-msgid "\t\tRobot modules: 000, 100\n"
-msgstr ""
-
-#: rcml_intepreter/main.cpp:273
-msgid "\t\tFunction modules: 000, 100\n"
-msgstr ""
-
-#: rcml_intepreter/main.cpp:274
-msgid "\t\tControl modules: 000, 100\n"
-msgstr ""
-
-#: rcml_intepreter/main.cpp:282
-msgid "="
-msgstr ""
-
-#: rcml_intepreter/main.cpp:283
-msgid "-P"
-msgstr ""
-
 #: rcml_intepreter/main.cpp:290
 #, c-format
 msgid ""
@@ -1208,25 +747,12 @@ msgstr ""
 msgid "Example: [-version] rcml_interpreter test.rcml [params]"
 msgstr ""
 
-#: rcml_intepreter/main.cpp:305 rcml_intepreter/main.cpp:309
-#: rcml_intepreter/main.cpp:339
-msgid "*****************************************************\n"
-msgstr ""
-
 #: rcml_intepreter/main.cpp:307
 msgid "*****************Robot Control Center****************\n"
 msgstr ""
 
 #: rcml_intepreter/main.cpp:341
 msgid "***************Thank You for using RCC!**************\n"
-msgstr ""
-
-#: rcml_intepreter/main.cpp:344
-msgid ""
-"*****************************************************\n"
-"\n"
-"\n"
-"\n"
 msgstr ""
 
 #: rcml_intepreter/modules.cpp:39
@@ -1247,11 +773,6 @@ msgstr ""
 #: rcml_intepreter/modules.cpp:49
 #, c-format
 msgid "Thread Robot Control (%p) finished.\n"
-msgstr ""
-
-#: rcml_intepreter/modules.cpp:60 rcml_intepreter/modules.cpp:79
-#, c-format
-msgid "...%s"
 msgstr ""
 
 #: rcml_intepreter/modules.cpp:72
@@ -1316,11 +837,6 @@ msgstr ""
 msgid "Robot Control (%p) finded DELETE request.\n"
 msgstr ""
 
-#: rcml_intepreter/pcode_execute.cpp:107
-#, c-format
-msgid "pc(%d->%d) = %d;  line - %d\n"
-msgstr ""
-
 #: rcml_intepreter/pcode_execute.cpp:154
 #, c-format
 msgid "Unknow asm command %d."
@@ -1341,22 +857,6 @@ msgstr ""
 
 #: rcml_intepreter/pcode_execute.cpp:476
 msgid "Unhandled exception!\n"
-msgstr ""
-
-#: rcml_intepreter/pcode_execute.cpp:703
-#, c-format
-msgid " %lf"
-msgstr ""
-
-#: rcml_intepreter/pcode_execute.cpp:711 module_wrapper/module_wrapper.cpp:433
-#: module_wrapper/module_wrapper.cpp:449
-#, c-format
-msgid "%s"
-msgstr ""
-
-#: rcml_intepreter/pcode_execute.cpp:715
-#, c-format
-msgid "%f"
 msgstr ""
 
 #: rcml_intepreter/pcode_execute.cpp:828
@@ -1393,11 +893,6 @@ msgstr ""
 #: module_wrapper/module_wrapper.cpp:156
 #, c-format
 msgid "Loaded %s module from: %s\n"
-msgstr "Загружен %s модуль  из: %s\n"
-
-#: module_wrapper/module_wrapper.cpp:158
-#, c-format
-msgid "  IID: %s\n"
 msgstr ""
 
 #: module_wrapper/module_wrapper.cpp:163
@@ -1424,7 +919,7 @@ msgstr ""
 #: module_wrapper/module_wrapper.cpp:174
 #, c-format
 msgid "  Module version: %d\n"
-msgstr "  Версия модуля: %d\n"
+msgstr ""
 
 #: module_wrapper/module_wrapper.cpp:178
 #, c-format
@@ -1521,4 +1016,13 @@ msgstr ""
 #: module_wrapper/pcode_wrapper.cpp:393
 #, c-format
 msgid "Cant find function: %s"
+msgstr ""
+
+#: module_wrapper/rcml_common/pcode_header.cpp:172
+msgid "This is not RCML pcode file!"
+msgstr ""
+
+#: module_wrapper/rcml_common/pcode_header.cpp:188
+#: module_wrapper/rcml_common/pcode_header.cpp:204
+msgid "Unknown PCode version"
 msgstr ""
