@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-13 13:35+0000\n"
+"POT-Creation-Date: 2016-01-14 06:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "Add IID or remove \"export\" keyword."
 msgstr ""
 
-#: rcml_compiler/classes.cpp:188 rcml_compiler/classes.cpp:234
+#: rcml_compiler/classes.cpp:188 rcml_compiler/classes.cpp:233
 msgid "Export keyword not allowed for non-lib program."
 msgstr ""
 
@@ -34,286 +34,256 @@ msgstr ""
 msgid "Haven't robot: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:206 rcml_compiler/classes.cpp:739
-#: rcml_compiler/classes.cpp:1350
+#: rcml_compiler/classes.cpp:206 rcml_compiler/classes.cpp:738
+#: rcml_compiler/classes.cpp:970 rcml_compiler/classes.cpp:1341
 #, c-format
-msgid "Please restart compiler. Dont forget enable \"%s\" "
+msgid ""
+"Please restart compiler. Dont forget enable \"%s\" module in config.ini!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:207 rcml_compiler/classes.cpp:740
-#: rcml_compiler/classes.cpp:1351 module_wrapper/pcode_wrapper.cpp:72
-msgid "module in config.ini!"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:215
+#: rcml_compiler/classes.cpp:214
 #, c-format
 msgid "Dublicate user robot function: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:233
+#: rcml_compiler/classes.cpp:232
 msgid "Use \"IID\" flag or remove \"export\" keyword."
 msgstr ""
 
-#: rcml_compiler/classes.cpp:244
+#: rcml_compiler/classes.cpp:243
 #, c-format
 msgid "Dublicate user function: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:437 rcml_compiler/classes.cpp:721
+#: rcml_compiler/classes.cpp:436 rcml_compiler/classes.cpp:720
 #, c-format
 msgid "Line: %d. Undefined variable: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:471
+#: rcml_compiler/classes.cpp:470
 #, c-format
 msgid "Line: %d. Break operator outside loop!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:490
+#: rcml_compiler/classes.cpp:489
 #, c-format
 msgid "Line: %d. Continue operator outside loop!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:502
+#: rcml_compiler/classes.cpp:501
 msgid "Try: missing arguments!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:513
+#: rcml_compiler/classes.cpp:512
 msgid "Try: muissing type argument!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:520
+#: rcml_compiler/classes.cpp:519
 #, c-format
 msgid "Try: unknow option name: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:526
+#: rcml_compiler/classes.cpp:525
 msgid "Try: invalid type!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:530
+#: rcml_compiler/classes.cpp:529
 msgid "Try: invalid option argument!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:630
+#: rcml_compiler/classes.cpp:629
 msgid "Variable cant have name as some robot!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:662
+#: rcml_compiler/classes.cpp:661
 #, c-format
 msgid "Line: %d. Use robot vars into robot's function is prohibited!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:735
+#: rcml_compiler/classes.cpp:734
 #, c-format
 msgid "Line: %d. Havent robot: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:757
+#: rcml_compiler/classes.cpp:755
 #, c-format
 msgid ""
 "Line: %d. Use robot names or robot vars into robot's function is prohibited!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:768
+#: rcml_compiler/classes.cpp:766
 #, c-format
 msgid "Line: %d. Undefined robot variable: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:803
+#: rcml_compiler/classes.cpp:801
 msgid "Call to function \"main\" is prohibited!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:806 rcml_compiler/classes.cpp:819
+#: rcml_compiler/classes.cpp:804 rcml_compiler/classes.cpp:817
 msgid "The call function with the package flag is prohibited!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:828
+#: rcml_compiler/classes.cpp:826
 msgid "Too many arguments for \"input\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:833
+#: rcml_compiler/classes.cpp:831
 msgid "Missing arguments for \"echo\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:838
+#: rcml_compiler/classes.cpp:836
 msgid "Invalid count arguments for \"set\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:850
+#: rcml_compiler/classes.cpp:848
 msgid "Invalid wait flag parameter for \"set\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:853
+#: rcml_compiler/classes.cpp:851
 #, c-format
 msgid "Unkcnow option name \"%s\" for \"set\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:857
+#: rcml_compiler/classes.cpp:855
 msgid "Invalid option argument for \"set\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:862
+#: rcml_compiler/classes.cpp:860
 msgid "Invalid count arguments for \"sleep\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:868
+#: rcml_compiler/classes.cpp:866
 msgid "Invalid argument for \"sleep\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:875
+#: rcml_compiler/classes.cpp:873
 msgid "Invalid count arguments for \"hand_control\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:883
+#: rcml_compiler/classes.cpp:881
 msgid "Invalid robot argument for \"hand_control\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:891
+#: rcml_compiler/classes.cpp:889
 msgid "Invalid control module argument for \"hand_control\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:894
+#: rcml_compiler/classes.cpp:892
 #, c-format
 msgid "Havent control module: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:907
+#: rcml_compiler/classes.cpp:905
 #, c-format
 msgid "Invalid argument by num %d for \"hand_control\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:917
+#: rcml_compiler/classes.cpp:915
 msgid "Invalid count arguments for \"send_package\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:925 rcml_compiler/classes.cpp:930
+#: rcml_compiler/classes.cpp:923 rcml_compiler/classes.cpp:928
 msgid "Invalid wait flag parameter for \"send_package\" function!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:935
+#: rcml_compiler/classes.cpp:933
 #, c-format
 msgid "Invalid name of function for system package: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:941
+#: rcml_compiler/classes.cpp:939
 #, c-format
-msgid "Warning: In line %d wait flag will be ignored by system "
+msgid "Warning: In line %d wait flag will be ignored by system function: %s!\n"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:942
-#, c-format
-msgid "function: %s!\n"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:955
+#: rcml_compiler/classes.cpp:952
 #, c-format
 msgid "Function module \"%s\" havent function: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:960
+#: rcml_compiler/classes.cpp:957
 #, c-format
-msgid "Call to function \"%s\" of module \"%s\" have invalid list "
+msgid "Call to function \"%s\" of module \"%s\" have invalid list arguments!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:961 rcml_compiler/classes.cpp:1004
-#: rcml_compiler/classes.cpp:1294 rcml_compiler/classes.cpp:1390
-msgid "arguments!"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:971
+#: rcml_compiler/classes.cpp:967
 #, c-format
 msgid "Unknow function module: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:974
-#, c-format
-msgid "Please restart compiler. Dont forget enable \"%s\" module "
-msgstr ""
-
-#: rcml_compiler/classes.cpp:975
-msgid "in config.ini!"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:989
+#: rcml_compiler/classes.cpp:984
 #, c-format
 msgid "Line: %d. Lib \"%s\" not loaded!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:998
+#: rcml_compiler/classes.cpp:993
 #, c-format
 msgid "Line: %d. Lib \"%s\" havent function: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:1003
+#: rcml_compiler/classes.cpp:998
 #, c-format
-msgid "Line: %d. Call to function \"%s\" of lib \"%s\" have invalid list "
+msgid ""
+"Line: %d. Call to function \"%s\" of lib \"%s\" have invalid list arguments!"
+msgstr ""
+
+#: rcml_compiler/classes.cpp:1105
+#, c-format
+msgid "Line: %d. Can't find for any robot for call the hand control function"
 msgstr ""
 
 #: rcml_compiler/classes.cpp:1111
 #, c-format
-msgid "Line: %d. Can't find for any robot for call the hand "
+msgid "Line: %d. Can't find robot for execute the hand control function"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:1112
-msgid "control function"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:1118
-#, c-format
-msgid "Line: %d. Can't find robot for execute the hand control "
-msgstr ""
-
-#: rcml_compiler/classes.cpp:1119
-msgid "function"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:1140
+#: rcml_compiler/classes.cpp:1132
 #, c-format
 msgid "Line: %d. Invalid axis name \"%s\" of control module"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:1181
+#: rcml_compiler/classes.cpp:1173
 #, c-format
 msgid "Line: %d. Wrong number of arguments to function: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:1193
+#: rcml_compiler/classes.cpp:1185
 #, c-format
 msgid "Line: %d. Undefined function: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:1275
+#: rcml_compiler/classes.cpp:1267
 #, c-format
 msgid "Line: %d. Wrong number of arguments for function: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:1293 rcml_compiler/classes.cpp:1389
+#: rcml_compiler/classes.cpp:1285 rcml_compiler/classes.cpp:1379
 #, c-format
-msgid "Line: %d. Call to function \"%s\" of lib have invalid list "
+msgid "Line: %d. Call to function \"%s\" of lib have invalid list arguments!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:1318
+#: rcml_compiler/classes.cpp:1309
 #, c-format
 msgid "Line: %d. Wrong list of arguments for function: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:1346 rcml_compiler/classes.cpp:1428
+#: rcml_compiler/classes.cpp:1337 rcml_compiler/classes.cpp:1417
 #, c-format
 msgid "Line: %d. Can't find robot for execute function: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:1372
+#: rcml_compiler/classes.cpp:1362
 #, c-format
 msgid "Line: %d. Wrong number of arguments!"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:1409
+#: rcml_compiler/classes.cpp:1398
 #, c-format
 msgid "Line: %d. Can't find robot function: %s"
 msgstr ""
 
-#: rcml_compiler/classes.cpp:1414
+#: rcml_compiler/classes.cpp:1403
 #, c-format
 msgid "Line: %d. Wrong list of arguments for call of function: %s!"
 msgstr ""
@@ -524,120 +494,105 @@ msgstr ""
 msgid "Repository not enabled!"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:40 rcml_compiler/repository.cpp:183
+#: rcml_compiler/repository.cpp:40
 msgid "robot_modules"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:43 rcml_compiler/repository.cpp:186
+#: rcml_compiler/repository.cpp:43
 msgid "function_modules"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:46 rcml_compiler/repository.cpp:189
+#: rcml_compiler/repository.cpp:46
 msgid "control_modules"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:55 rcml_compiler/repository.cpp:197
+#: rcml_compiler/repository.cpp:55 rcml_compiler/repository.cpp:192
 msgid "Maybe this module just need enable in config file?"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:56 rcml_compiler/repository.cpp:198
+#: rcml_compiler/repository.cpp:56 rcml_compiler/repository.cpp:193
 #, c-format
 msgid "Directory of %s module \"%s\" already exists!"
 msgstr ""
 
 #: rcml_compiler/repository.cpp:62
 #, c-format
-msgid "The \"%s\" %s module is not found. Try attempt to find this "
+msgid ""
+"The \"%s\" %s module is not found.\n"
+" Try attempt to find thismodule into repository?\n"
+" [y/n]: "
 msgstr ""
 
-#: rcml_compiler/repository.cpp:63 rcml_compiler/repository.cpp:78
-msgid "module into repository? [y/n]: "
-msgstr ""
-
-#: rcml_compiler/repository.cpp:69
+#: rcml_compiler/repository.cpp:68
 #, c-format
-msgid "The \"%s\" function is not found into the existing modules. "
+msgid ""
+"The \"%s\" function is not found into the existing modules.\n"
+" Try attempt to find module, that have this function?\n"
+" [y/n]: "
 msgstr ""
 
-#: rcml_compiler/repository.cpp:70
-msgid "Try attempt to find module, that have this function? "
-msgstr ""
-
-#: rcml_compiler/repository.cpp:71
-msgid "[y/n]: "
-msgstr ""
-
-#: rcml_compiler/repository.cpp:77
+#: rcml_compiler/repository.cpp:74
 #, c-format
-msgid "The %s module is not found by IID: %s. Try attempt to find "
+msgid ""
+"The %s module is not found by IID: %s.\n"
+" Try attempt to find module into repository?\n"
+" [y/n]: "
 msgstr ""
 
-#: rcml_compiler/repository.cpp:95
+#: rcml_compiler/repository.cpp:91
 #, c-format
 msgid ""
 "\n"
 "Check %s module in repository by name: %s..."
 msgstr ""
 
-#: rcml_compiler/repository.cpp:102
+#: rcml_compiler/repository.cpp:98
 #, c-format
 msgid ""
 "\n"
 "Check %s module in repository by function name: %s..."
 msgstr ""
 
-#: rcml_compiler/repository.cpp:109
+#: rcml_compiler/repository.cpp:105
 #, c-format
 msgid ""
 "\n"
 "Check %s module in repository by IID: %s..."
 msgstr ""
 
-#: rcml_compiler/repository.cpp:117
+#: rcml_compiler/repository.cpp:113
 msgid "failed\n"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:118
+#: rcml_compiler/repository.cpp:114
 #, c-format
 msgid "Cant find %s module in repository!\n"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:122
+#: rcml_compiler/repository.cpp:118
 msgid "success\n"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:130
+#: rcml_compiler/repository.cpp:126
 #, c-format
 msgid "Finded only one %s module:\n"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:133
-#, c-format
-msgid "    %s (%s)\n"
-msgstr ""
-
-#: rcml_compiler/repository.cpp:136
+#: rcml_compiler/repository.cpp:132
 msgid "Load this module? [y/n]: "
 msgstr ""
 
-#: rcml_compiler/repository.cpp:146
+#: rcml_compiler/repository.cpp:142
 #, c-format
 msgid "Finded next %s modules:\n"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:154
-msgid "Input number of module, that will be loaded (or zero for "
+#: rcml_compiler/repository.cpp:150
+msgid ""
+"Input number of module, that will be loaded (or zero for abort loading): "
 msgstr ""
 
-#: rcml_compiler/repository.cpp:155
-msgid "abort loading): "
-msgstr ""
-
-#: rcml_compiler/repository.cpp:165
-msgid "\n"
-msgstr ""
-
-#: rcml_compiler/repository.cpp:168
+#: rcml_compiler/repository.cpp:163
 msgid "The loading of module is aborted by user"
 msgstr ""
 
@@ -965,6 +920,10 @@ msgstr ""
 #: module_wrapper/pcode_wrapper.cpp:71
 #, c-format
 msgid "Please restart interpreter. Don't forget enable \"%s\" "
+msgstr ""
+
+#: module_wrapper/pcode_wrapper.cpp:72
+msgid "module in config.ini!"
 msgstr ""
 
 #: module_wrapper/pcode_wrapper.cpp:89

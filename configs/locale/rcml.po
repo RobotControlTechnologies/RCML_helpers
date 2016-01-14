@@ -1,23 +1,23 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Russian translations for PACKAGE package.
+# Copyright (C) 2016 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Automatically generated, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-13 18:49+0500\n"
-"PO-Revision-Date: 2016-01-13 19:24+0500\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2016-01-14 06:00+0000\n"
+"PO-Revision-Date: 2016-01-14 12:45+0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : "
+"2);\n"
 "X-Generator: Poedit 1.8.6\n"
-"Last-Translator: \n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"Language: ru_RU\n"
 
 #: rcml_compiler/classes.cpp:65
 msgid "Too many registers used!"
@@ -27,7 +27,7 @@ msgstr "Используется cлишком много регистров!"
 msgid "Add IID or remove \"export\" keyword."
 msgstr "Добавьте IID или удалите ключевое слово \"export\"."
 
-#: rcml_compiler/classes.cpp:188 rcml_compiler/classes.cpp:234
+#: rcml_compiler/classes.cpp:188 rcml_compiler/classes.cpp:233
 msgid "Export keyword not allowed for non-lib program."
 msgstr "Ключевое слово export разрешено только для программ из библиотек"
 
@@ -36,289 +36,253 @@ msgstr "Ключевое слово export разрешено только дл�
 msgid "Haven't robot: %s"
 msgstr "Нет робота: %s"
 
-#: rcml_compiler/classes.cpp:206 rcml_compiler/classes.cpp:739
-#: rcml_compiler/classes.cpp:1350
+#: rcml_compiler/classes.cpp:206 rcml_compiler/classes.cpp:738 rcml_compiler/classes.cpp:970
+#: rcml_compiler/classes.cpp:1341
 #, c-format
-msgid "Please restart compiler. Dont forget enable \"%s\" "
-msgstr "Пожалуйста перезапустите компилятор. Не забудьте включить \"%s\" "
+msgid "Please restart compiler. Dont forget enable \"%s\" module in config.ini!"
+msgstr "ожалуйста перезапустите компилятор. Не забудьте включить \"%s\" модуль в config.ini!"
 
-#: rcml_compiler/classes.cpp:207 rcml_compiler/classes.cpp:740
-#: rcml_compiler/classes.cpp:1351 module_wrapper/pcode_wrapper.cpp:72
-msgid "module in config.ini!"
-msgstr "Модуль в config.ini!"
-
-#: rcml_compiler/classes.cpp:215
+#: rcml_compiler/classes.cpp:214
 #, c-format
 msgid "Dublicate user robot function: %s"
 msgstr "Добликат пользовательской функции робота: %s"
 
-#: rcml_compiler/classes.cpp:233
+#: rcml_compiler/classes.cpp:232
 msgid "Use \"IID\" flag or remove \"export\" keyword."
 msgstr "Используйте флаг \"IID\" или удалите ключевое слово \"export\"."
 
-#: rcml_compiler/classes.cpp:244
+#: rcml_compiler/classes.cpp:243
 #, c-format
 msgid "Dublicate user function: %s"
 msgstr "Добликат пользовательской функции: %s"
 
-#: rcml_compiler/classes.cpp:437 rcml_compiler/classes.cpp:721
+#: rcml_compiler/classes.cpp:436 rcml_compiler/classes.cpp:720
 #, c-format
 msgid "Line: %d. Undefined variable: %s"
 msgstr "Строка: %d. Переменная не определена: %s"
 
-#: rcml_compiler/classes.cpp:471
+#: rcml_compiler/classes.cpp:470
 #, c-format
 msgid "Line: %d. Break operator outside loop!"
 msgstr "Строка: %d. Оператор break вне цикла!"
 
-#: rcml_compiler/classes.cpp:490
+#: rcml_compiler/classes.cpp:489
 #, c-format
 msgid "Line: %d. Continue operator outside loop!"
 msgstr "Строка: %d. Оператор сontinue вне цикла!"
 
-#: rcml_compiler/classes.cpp:502
+#: rcml_compiler/classes.cpp:501
 msgid "Try: missing arguments!"
 msgstr "Try: недостаточно аргументов!"
 
-#: rcml_compiler/classes.cpp:513
+#: rcml_compiler/classes.cpp:512
 msgid "Try: muissing type argument!"
 msgstr "Try: не задан тип аргумента!"
 
-#: rcml_compiler/classes.cpp:520
+#: rcml_compiler/classes.cpp:519
 #, c-format
 msgid "Try: unknow option name: %s"
 msgstr "Try: неизвестное имя свойства: %s"
 
-#: rcml_compiler/classes.cpp:526
+#: rcml_compiler/classes.cpp:525
 msgid "Try: invalid type!"
 msgstr "Try: неверный тип!"
 
-#: rcml_compiler/classes.cpp:530
+#: rcml_compiler/classes.cpp:529
 msgid "Try: invalid option argument!"
 msgstr "Try: неверный аргумент опции!"
 
-#: rcml_compiler/classes.cpp:630
+#: rcml_compiler/classes.cpp:629
 msgid "Variable cant have name as some robot!"
 msgstr "Имена переменной и робота не должны совпадать"
 
-#: rcml_compiler/classes.cpp:662
+#: rcml_compiler/classes.cpp:661
 #, c-format
 msgid "Line: %d. Use robot vars into robot's function is prohibited!"
-msgstr ""
-"Строка: %d. Запрещено использовать переменные робота в функции робота!"
+msgstr "Строка: %d. Запрещено использовать переменные робота в функции робота!"
 
-#: rcml_compiler/classes.cpp:735
+#: rcml_compiler/classes.cpp:734
 #, c-format
 msgid "Line: %d. Havent robot: %s"
 msgstr "Строка: %d. Нет робота: %s"
 
-#: rcml_compiler/classes.cpp:757
+#: rcml_compiler/classes.cpp:755
 #, c-format
-msgid ""
-"Line: %d. Use robot names or robot vars into robot's function is prohibited!"
-msgstr ""
-"Строка: %d. Запрещено использовать имена или переменные роботов в функциях "
-"роботов!"
+msgid "Line: %d. Use robot names or robot vars into robot's function is prohibited!"
+msgstr "Строка: %d. Запрещено использовать имена или переменные роботов в функциях роботов!"
 
-#: rcml_compiler/classes.cpp:768
+#: rcml_compiler/classes.cpp:766
 #, c-format
 msgid "Line: %d. Undefined robot variable: %s"
 msgstr "Строка: %d. Неопределенная переменная робота: %s"
 
-#: rcml_compiler/classes.cpp:803
+#: rcml_compiler/classes.cpp:801
 msgid "Call to function \"main\" is prohibited!"
-msgstr "Call to function \"main\" is prohibited!"
+msgstr "Вызов функции \"main\" запрещен!"
 
-#: rcml_compiler/classes.cpp:806 rcml_compiler/classes.cpp:819
+#: rcml_compiler/classes.cpp:804 rcml_compiler/classes.cpp:817
 msgid "The call function with the package flag is prohibited!"
 msgstr "Запрещен вызов функции с флагом пакета!"
 
-#: rcml_compiler/classes.cpp:828
+#: rcml_compiler/classes.cpp:826
 msgid "Too many arguments for \"input\" function!"
 msgstr "Слишком много аргументов для функции \"input\"!"
 
-#: rcml_compiler/classes.cpp:833
+#: rcml_compiler/classes.cpp:831
 msgid "Missing arguments for \"echo\" function!"
 msgstr "Недостаточно аргументов для функции \"echo\"!"
 
-#: rcml_compiler/classes.cpp:838
+#: rcml_compiler/classes.cpp:836
 msgid "Invalid count arguments for \"set\" function!"
 msgstr "Задано неверное количество аргументов функции \"set\"!"
 
-#: rcml_compiler/classes.cpp:850
+#: rcml_compiler/classes.cpp:848
 msgid "Invalid wait flag parameter for \"set\" function!"
 msgstr "Неверно задан параметр флага ожидания ы функции \"set\"!"
 
-#: rcml_compiler/classes.cpp:853
+#: rcml_compiler/classes.cpp:851
 #, c-format
 msgid "Unkcnow option name \"%s\" for \"set\" function!"
 msgstr "Неизвестное имя опции \"%s\" в функции\"set\"!"
 
-#: rcml_compiler/classes.cpp:857
+#: rcml_compiler/classes.cpp:855
 msgid "Invalid option argument for \"set\" function!"
 msgstr "Неверно задан параметр функции \"set\""
 
-#: rcml_compiler/classes.cpp:862
+#: rcml_compiler/classes.cpp:860
 msgid "Invalid count arguments for \"sleep\" function!"
 msgstr "Задано еверное количество аргументов  функции \"sleep\""
 
-#: rcml_compiler/classes.cpp:868
+#: rcml_compiler/classes.cpp:866
 msgid "Invalid argument for \"sleep\" function!"
 msgstr "Неверно задан аргумент функции \"sleep\"!"
 
-#: rcml_compiler/classes.cpp:875
+#: rcml_compiler/classes.cpp:873
 msgid "Invalid count arguments for \"hand_control\" function!"
 msgstr "Задано неверное количество аргументов функции \"hand_control\"!"
 
-#: rcml_compiler/classes.cpp:883
+#: rcml_compiler/classes.cpp:881
 msgid "Invalid robot argument for \"hand_control\" function!"
 msgstr "Неверно задан аргумент робота в функции \"hand_control\""
 
-#: rcml_compiler/classes.cpp:891
+#: rcml_compiler/classes.cpp:889
 msgid "Invalid control module argument for \"hand_control\" function!"
 msgstr "Неверно задан аргумент модуля контроя в функции \"hand_control\""
 
-#: rcml_compiler/classes.cpp:894
+#: rcml_compiler/classes.cpp:892
 #, c-format
 msgid "Havent control module: %s"
-msgstr "Нет модуля контроя"
+msgstr "Нет модуля контроя: %s"
 
-#: rcml_compiler/classes.cpp:907
+#: rcml_compiler/classes.cpp:905
 #, c-format
 msgid "Invalid argument by num %d for \"hand_control\" function!"
 msgstr "В функции \"hand_control\" неверно задан аргумент номер %d"
 
-#: rcml_compiler/classes.cpp:917
+#: rcml_compiler/classes.cpp:915
 msgid "Invalid count arguments for \"send_package\" function!"
 msgstr "Неверно задано количество аргументов в функции \"send_package\""
 
-#: rcml_compiler/classes.cpp:925 rcml_compiler/classes.cpp:930
+#: rcml_compiler/classes.cpp:923 rcml_compiler/classes.cpp:928
 msgid "Invalid wait flag parameter for \"send_package\" function!"
 msgstr "Неверно задан параметр флага ожидания в функции \"send_package\""
 
-#: rcml_compiler/classes.cpp:935
+#: rcml_compiler/classes.cpp:933
 #, c-format
 msgid "Invalid name of function for system package: %s"
 msgstr "Задано неверное имя функции для системного пакета: %s"
 
-#: rcml_compiler/classes.cpp:941
+#: rcml_compiler/classes.cpp:939
 #, c-format
-msgid "Warning: In line %d wait flag will be ignored by system "
-msgstr "Предупреждение: В строке %d  флаг ожидания не будет учитываться системой"
+msgid "Warning: In line %d wait flag will be ignored by system function: %s!\n"
+msgstr "Предупреждение: В строке %d  флаг ожидания не будет учитываться системоной функцией \"%s\"!\n"
 
-#: rcml_compiler/classes.cpp:942
-#, c-format
-msgid "function: %s!\n"
-msgstr "функция: %s!\n"
-
-#: rcml_compiler/classes.cpp:955
+#: rcml_compiler/classes.cpp:952
 #, c-format
 msgid "Function module \"%s\" havent function: %s"
 msgstr "В модуле функций \"%s\" нет функции: %s"
 
-#: rcml_compiler/classes.cpp:960
+#: rcml_compiler/classes.cpp:957
 #, c-format
-msgid "Call to function \"%s\" of module \"%s\" have invalid list "
-msgstr "Вызов функции \"%s\" модуля \"%s\" содержит неверный список"
+msgid "Call to function \"%s\" of module \"%s\" have invalid list arguments!"
+msgstr "Вызов функции \"%s\" модуля \"%s\" содержит неверный список аргументов!"
 
-#: rcml_compiler/classes.cpp:961 rcml_compiler/classes.cpp:1004
-#: rcml_compiler/classes.cpp:1294 rcml_compiler/classes.cpp:1390
-msgid "arguments!"
-msgstr "аргументов!"
-
-#: rcml_compiler/classes.cpp:971
+#: rcml_compiler/classes.cpp:967
 #, c-format
 msgid "Unknow function module: %s"
-msgstr "неизвестный модуль функций: %s"
+msgstr "Неизвестный модуль функций: %s"
 
-#: rcml_compiler/classes.cpp:974
-#, c-format
-msgid "Please restart compiler. Dont forget enable \"%s\" module "
-msgstr "Пожалуйста перезапустите компилятор. Не забудьте включить модуль \"%s\""
-
-#: rcml_compiler/classes.cpp:975
-msgid "in config.ini!"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:989
+#: rcml_compiler/classes.cpp:984
 #, c-format
 msgid "Line: %d. Lib \"%s\" not loaded!"
 msgstr "Строка: %d. Библиотека \"%s\" не загружена!"
 
-#: rcml_compiler/classes.cpp:998
+#: rcml_compiler/classes.cpp:993
 #, c-format
 msgid "Line: %d. Lib \"%s\" havent function: %s"
 msgstr "Строка: %d. Библиотека \"%s\" не содержит функцию: %s"
 
-#: rcml_compiler/classes.cpp:1003 
+#: rcml_compiler/classes.cpp:998
 #, c-format
-msgid "Line: %d. Call to function \"%s\" of lib \"%s\" have invalid list "
-msgstr "Строка: %d. Вызов функции \"%s\" библиотеки \"%s\" содержит неверный список"
+msgid "Line: %d. Call to function \"%s\" of lib \"%s\" have invalid list arguments!"
+msgstr "Строка: %d. Вызов функции \"%s\" библиотеки \"%s\" содержит неверный список аргументов!"
 
-#: rcml_compiler/classes.cpp:1111 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#: rcml_compiler/classes.cpp:1105
 #, c-format
-msgid "Line: %d. Can't find for any robot for call the hand "
-msgstr "Строка: %d. Can't find for any robot for call the hand "
+msgid "Line: %d. Can't find for any robot for call the hand control function"
+msgstr "Строка: %d. Не могу найти робота для вызова функции ручного управления."
 
-#: rcml_compiler/classes.cpp:1112
-msgid "control function"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:1118
+#: rcml_compiler/classes.cpp:1111
 #, c-format
-msgid "Line: %d. Can't find robot for execute the hand control "
-msgstr ""
+msgid "Line: %d. Can't find robot for execute the hand control function"
+msgstr "Строка: %d. Не могу найти робота для выполнения функции ручного управления."
 
-#: rcml_compiler/classes.cpp:1119
-msgid "function"
-msgstr ""
-
-#: rcml_compiler/classes.cpp:1140
+#: rcml_compiler/classes.cpp:1132
 #, c-format
 msgid "Line: %d. Invalid axis name \"%s\" of control module"
 msgstr "Строка: %d. Неверно задано имя оси \"%s\" для модуля управления"
 
-#: rcml_compiler/classes.cpp:1181
+#: rcml_compiler/classes.cpp:1173
 #, c-format
 msgid "Line: %d. Wrong number of arguments to function: %s"
 msgstr "Строка: %d. Задано неверное количество аргументов у функции: %s"
 
-#: rcml_compiler/classes.cpp:1193
+#: rcml_compiler/classes.cpp:1185
 #, c-format
 msgid "Line: %d. Undefined function: %s"
 msgstr "Строка: %d. Неизвестная функция: %s"
 
-#: rcml_compiler/classes.cpp:1275
+#: rcml_compiler/classes.cpp:1267
 #, c-format
 msgid "Line: %d. Wrong number of arguments for function: %s"
 msgstr "Строка: %d. Задано неверное количество аргументов у функции: %s "
 
-#: rcml_compiler/classes.cpp:1293 rcml_compiler/classes.cpp:1389
+#: rcml_compiler/classes.cpp:1285 rcml_compiler/classes.cpp:1379
 #, c-format
-msgid "Line: %d. Call to function \"%s\" of lib have invalid list "
-msgstr "Строка: %d. Вызов функции \"%s\" библиотеки \"%s\" содержит неверный список"
+msgid "Line: %d. Call to function \"%s\" of lib have invalid list arguments!"
+msgstr "Строка: %d. Вызов функции \"%s\" библиотеки содержит неверный список аргументов!"
 
-#: rcml_compiler/classes.cpp:1318
+#: rcml_compiler/classes.cpp:1309
 #, c-format
 msgid "Line: %d. Wrong list of arguments for function: %s"
 msgstr "Строка: %d. Задан неверный список аргументов в функции: %s"
 
-#: rcml_compiler/classes.cpp:1346 rcml_compiler/classes.cpp:1428
+#: rcml_compiler/classes.cpp:1337 rcml_compiler/classes.cpp:1417
 #, c-format
 msgid "Line: %d. Can't find robot for execute function: %s"
 msgstr "Строка: %d. Не могу найти робота для выполнения функции: %s"
 
-#: rcml_compiler/classes.cpp:1372
+#: rcml_compiler/classes.cpp:1362
 #, c-format
 msgid "Line: %d. Wrong number of arguments!"
 msgstr "Строка: %d. Неверное количество аргументов"
 
-#: rcml_compiler/classes.cpp:1409
+#: rcml_compiler/classes.cpp:1398
 #, c-format
 msgid "Line: %d. Can't find robot function: %s"
 msgstr "Строка: %d. Не могу найти функцию робота: %s"
 
-#: rcml_compiler/classes.cpp:1414
+#: rcml_compiler/classes.cpp:1403
 #, c-format
 msgid "Line: %d. Wrong list of arguments for call of function: %s!"
 msgstr "Строка: %d. Неверно задан список аргументов для вызова функции: %s"
@@ -334,11 +298,11 @@ msgstr "Модулей робота используется: %d\n"
 
 #: rcml_compiler/store.cpp:497
 msgid "Used function modules: "
-msgstr "Модулей функций используется: %d\n"
+msgstr "Модулей функций используется: "
 
 #: rcml_compiler/store.cpp:515
 msgid "Used control modules: "
-msgstr "Модулей управления используется: %d\n"
+msgstr "Модулей управления используется: "
 
 #: rcml_compiler/store.cpp:533
 #, c-format
@@ -395,16 +359,12 @@ msgid "Invalid param: %s"
 msgstr "Неверный параметр: %s"
 
 #: rcml_compiler/main.cpp:121
-msgid "Пример: [-debug] [-version] rcml_compiler "
-msgstr ""
-
-#: rcml_compiler/main.cpp:122
-msgid "test.rcml test.rcml.pc test.rcml.dbg"
-msgstr ""
+msgid "Example: [-debug] [-version] rcml_compiler test.rcml test.rcml.pc test.rcml.dbg"
+msgstr "Пример: [-debug] [-version] rcml_compiler test.rcml test.rcml.pc test.rcml.dbg"
 
 #: rcml_compiler/main.cpp:127
-msgid "Пример: [-version] rcml_compiler test.rcml test.rcml.pc"
-msgstr ""
+msgid "Example: [-version] rcml_compiler test.rcml test.rcml.pc"
+msgstr "Пример: [-version] rcml_compiler test.rcml test.rcml.pc"
 
 #: rcml_compiler/main.cpp:129 rcml_intepreter/main.cpp:301
 msgid "Invalid arguments!"
@@ -418,7 +378,7 @@ msgstr "Не могу найти исходный файл: %s"
 #: rcml_compiler/main.cpp:145
 #, c-format
 msgid "Source file is not file: %s"
-msgstr ""
+msgstr "Это не файл исходного кода: %s"
 
 #: rcml_compiler/main.cpp:159
 msgid "Preprocessor parsing error(s):"
@@ -451,7 +411,7 @@ msgstr "Перед вызовом обрабтки"
 
 #: rcml_compiler/main.cpp:251
 msgid "Programm successful compiled!\n"
-msgstr "Программа успешно скомпилирована!"
+msgstr "Программа успешно скомпилирована!\n"
 
 #: rcml_compiler/main.cpp:253 rcml_intepreter/main.cpp:346
 msgid "The error(s) occurred: "
@@ -461,8 +421,7 @@ msgstr "Произошла ошибка(и): "
 msgid "locale setted incorrectly! Try to add .UTF-8 to locale"
 msgstr "Локаль установлена неверно!"
 
-#: rcml_compiler/config.cpp:100 rcml_compiler/config.cpp:131
-#: rcml_compiler/config.cpp:161
+#: rcml_compiler/config.cpp:100 rcml_compiler/config.cpp:131 rcml_compiler/config.cpp:161
 #, c-format
 msgid "Error in %s module %s:"
 msgstr "Ошибка в %s модуля %s:"
@@ -511,7 +470,7 @@ msgstr ""
 
 #: rcml_compiler/pcode_process.cpp:690
 msgid "Don't know how to proceed O_O ... "
-msgstr ""
+msgstr "Не знаю как такое обработать O_O ... "
 
 #: rcml_compiler/pcode_process.cpp:702
 msgid "Before delete empty adds"
@@ -527,213 +486,202 @@ msgstr ""
 
 #: rcml_compiler/repository.cpp:29
 msgid "Repository not enabled!"
-msgstr ""
+msgstr "Репозиторий не подключен!"
 
-#: rcml_compiler/repository.cpp:40 rcml_compiler/repository.cpp:183
+#: rcml_compiler/repository.cpp:40
 msgid "robot_modules"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:43 rcml_compiler/repository.cpp:186
+#: rcml_compiler/repository.cpp:43
 msgid "function_modules"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:46 rcml_compiler/repository.cpp:189
+#: rcml_compiler/repository.cpp:46
 msgid "control_modules"
 msgstr ""
 
-#: rcml_compiler/repository.cpp:55 rcml_compiler/repository.cpp:197
+#: rcml_compiler/repository.cpp:55 rcml_compiler/repository.cpp:192
 msgid "Maybe this module just need enable in config file?"
 msgstr "Может быть этот модульнужно просто включить в файл конфигурации"
 
-#: rcml_compiler/repository.cpp:56 rcml_compiler/repository.cpp:198
+#: rcml_compiler/repository.cpp:56 rcml_compiler/repository.cpp:193
 #, c-format
 msgid "Directory of %s module \"%s\" already exists!"
 msgstr "Директория %s модуля \"%s\" уже существует!"
 
 #: rcml_compiler/repository.cpp:62
 #, c-format
-msgid "The \"%s\" %s module is not found. Try attempt to find this "
+msgid ""
+"The \"%s\" %s module is not found.\n"
+" Try attempt to find thismodule into repository?\n"
+" [y/n]: "
 msgstr ""
 
-#: rcml_compiler/repository.cpp:63 rcml_compiler/repository.cpp:78
-msgid "module into repository? [y/n]: "
-msgstr ""
-
-#: rcml_compiler/repository.cpp:69
+#: rcml_compiler/repository.cpp:68
 #, c-format
-msgid "The \"%s\" function is not found into the existing modules. "
-msgstr "Функция \"%s\" не найдена в существующих модулях."
+msgid ""
+"The \"%s\" function is not found into the existing modules.\n"
+" Try attempt to find module, that have this function?\n"
+" [y/n]: "
+msgstr "Функция \"%s\" не найдена в существующих модулях. Попробовать найти модуль, содержащий эту функцию? [y/n]: "
 
-#: rcml_compiler/repository.cpp:70
-msgid "Try attempt to find module, that have this function? "
-msgstr "Попробовать найти модуль, содержащий данную функцию?"
-
-#: rcml_compiler/repository.cpp:71
-msgid "[y/n]: "
-msgstr ""
-
-#: rcml_compiler/repository.cpp:77
+#: rcml_compiler/repository.cpp:74
 #, c-format
-msgid "The %s module is not found by IID: %s. Try attempt to find "
+msgid ""
+"The %s module is not found by IID: %s.\n"
+" Try attempt to find module into repository?\n"
+" [y/n]: "
 msgstr ""
+"Модуль %s не найден по IID: %s.\n"
+" Попробовать найти в репозитории?\n"
+" [y/n]:  "
 
-#: rcml_compiler/repository.cpp:95
+#: rcml_compiler/repository.cpp:91
 #, c-format
 msgid ""
 "\n"
 "Check %s module in repository by name: %s..."
 msgstr ""
+"\n"
+" Проверяю наличае модуля %s в репозитории, по имени: %s..."
 
-#: rcml_compiler/repository.cpp:102
+#: rcml_compiler/repository.cpp:98
 #, c-format
 msgid ""
 "\n"
 "Check %s module in repository by function name: %s..."
 msgstr ""
+"\n"
+" Проверяю наличае модуля %s в репозитории, по имени функции: %s..."
 
-#: rcml_compiler/repository.cpp:109
+#: rcml_compiler/repository.cpp:105
 #, c-format
 msgid ""
 "\n"
 "Check %s module in repository by IID: %s..."
 msgstr ""
+"\n"
+" Проверяю наличае модуля %s в репозитории, по IID: %s..."
 
-#: rcml_compiler/repository.cpp:117
+#: rcml_compiler/repository.cpp:113
 msgid "failed\n"
-msgstr ""
+msgstr "Неудача\n"
 
-#: rcml_compiler/repository.cpp:118
+#: rcml_compiler/repository.cpp:114
 #, c-format
 msgid "Cant find %s module in repository!\n"
-msgstr "Не могу нвйти модуль \"%s\" в репозитории!"
+msgstr "Не могу найти модуль \"%s\" в репозитории!\n"
 
-#: rcml_compiler/repository.cpp:122
+#: rcml_compiler/repository.cpp:118
 msgid "success\n"
-msgstr "успешно\n"
+msgstr "успех\n"
 
-#: rcml_compiler/repository.cpp:130
+#: rcml_compiler/repository.cpp:126
 #, c-format
 msgid "Finded only one %s module:\n"
 msgstr "Найден только один модуль %s:\n"
 
-#: rcml_compiler/repository.cpp:133
-#, c-format
-msgid "    %s (%s)\n"
-msgstr ""
-
-#: rcml_compiler/repository.cpp:136
+#: rcml_compiler/repository.cpp:132
 msgid "Load this module? [y/n]: "
 msgstr "Загрузить этот модуль? [y/n]: "
 
-#: rcml_compiler/repository.cpp:146
+#: rcml_compiler/repository.cpp:142
 #, c-format
 msgid "Finded next %s modules:\n"
 msgstr "Найдены модули %s:\n"
 
-#: rcml_compiler/repository.cpp:154
-msgid "Input number of module, that will be loaded (or zero for "
-msgstr ""
+#: rcml_compiler/repository.cpp:150
+msgid "Input number of module, that will be loaded (or zero for abort loading): "
+msgstr "Введите номер модуля, который хотите згрузить (0 для отмены загрузки):"
 
-#: rcml_compiler/repository.cpp:155
-msgid "abort loading): "
-msgstr ""
-
-#: rcml_compiler/repository.cpp:165
-msgid "\n"
-msgstr ""
-
-#: rcml_compiler/repository.cpp:168
+#: rcml_compiler/repository.cpp:163
 msgid "The loading of module is aborted by user"
-msgstr ""
+msgstr "Загрузка модуля прервана пользователем"
 
 #: rcml_intepreter/debug.cpp:50
 #, c-format
 msgid "Cant load WSA library. Error code: %d"
-msgstr ""
+msgstr "Не могу загрузить библиотеку WSA. Код ошибки: %d"
 
 #: rcml_intepreter/debug.cpp:55
 msgid "Invalid WSA version!"
-msgstr ""
+msgstr "Неверная версия WSA!"
 
 #: rcml_intepreter/debug.cpp:61
 #, c-format
 msgid "Cant create the debug socket. Error code: %d\n"
-msgstr ""
+msgstr "Не могу создать сокет отладчика. Код ошибки: %d\n"
 
 #: rcml_intepreter/debug.cpp:71
 #, c-format
 msgid "Cant connect to the debug socket. Error code: %d\n"
-msgstr ""
+msgstr "Не могу подключиться к сокет отладчика. Код ошибки: %d\n"
 
 #: rcml_intepreter/debug.cpp:103
 #, c-format
 msgid "Cant send to the debug socket. Error code: %d\n"
-msgstr ""
+msgstr "Не могу отправить в сокет отладчика. Код ошибки: %d\n"
 
 #: rcml_intepreter/debug.cpp:119
 msgid "The debug socket error in select function!"
-msgstr ""
+msgstr "Ошибка сокета отладчика в выбраннной функции!"
 
 #: rcml_intepreter/debug.cpp:126
 msgid "The debug socket error with input buffer!"
-msgstr ""
+msgstr "Ошибка сокета отладчика в буфере ввода!"
 
 #: rcml_intepreter/debug.cpp:146
 #, c-format
 msgid "Error. Close debug socket. Code: %d\n"
-msgstr ""
+msgstr "Ошибка. Закрыт сокет отладчика. Код: %d\n"
 
 #: rcml_intepreter/main.cpp:126
 #, c-format
 msgid "Cant find lib with IID: %s"
-msgstr ""
+msgstr "Не могу найти библиотеку с IID: %s"
 
 #: rcml_intepreter/main.cpp:144
 #, c-format
 msgid "Prevent program run by robot module: %s"
-msgstr ""
+msgstr "Работа программы предотвращена модулем робота: %s"
 
 #: rcml_intepreter/main.cpp:150
 #, c-format
 msgid "Prevent program run by function module: %s"
-msgstr ""
+msgstr "Работа программы предотвращена модулем функций: %s"
 
 #: rcml_intepreter/main.cpp:156
 #, c-format
 msgid "Prevent program run by control module: %s"
-msgstr ""
+msgstr "Работа программы предотвращена модулем управления: %s"
 
 #: rcml_intepreter/main.cpp:177
 msgid "Parameters not specified:\n"
-msgstr ""
+msgstr "Не задан параметр:\n"
 
 #: rcml_intepreter/main.cpp:183
 msgid "unknown parameters: \n"
-msgstr ""
+msgstr "Неизвестный параметр: \n"
 
 #: rcml_intepreter/main.cpp:222
 #, c-format
 msgid "Robot module \"%s\" reported an error at the end of the program"
-msgstr ""
+msgstr "Модуль робота \"%s\" сообщил об ошибке во время завершения программы"
 
 #: rcml_intepreter/main.cpp:229
 #, c-format
-msgid "Function module \"%s\" reported an error at the end of the "
-msgstr ""
-
-#: rcml_intepreter/main.cpp:230
-msgid "program"
-msgstr ""
+msgid "Function module \"%s\" reported an error at the end of the program"
+msgstr "Модуль функций \"%s\" сообщил об ошибке во время завершения программы"
 
 #: rcml_intepreter/main.cpp:237
 #, c-format
 msgid "Control module \"%s\" reported an error at the end of the program"
-msgstr ""
+msgstr "Модуль управления \"%s\" сообщил об ошибке во время завершения программы"
 
 #: rcml_intepreter/main.cpp:249
 #, c-format
 msgid "Error occured during execute program: %s"
-msgstr ""
+msgstr "Во время выполнения программы произошла ошибка: %s"
 
 #: rcml_intepreter/main.cpp:262
 msgid ""
@@ -743,175 +691,169 @@ msgstr ""
 
 #: rcml_intepreter/main.cpp:290
 #, c-format
-msgid ""
-"Invalid param: %s, specify name or value. Example: -"
-"P[argument_name]=[argument_value]"
-msgstr ""
+msgid "Invalid param: %s, specify name or value. Example: -P[argument_name]=[argument_value]"
+msgstr "Неверно задан параметр: %s, уточните его имя или значение. Пример: -P[Имя параметра]=[Значение параметра]"
 
 #: rcml_intepreter/main.cpp:300
 msgid "Example: [-version] rcml_interpreter test.rcml [params]"
-msgstr ""
+msgstr "Пример: [-version] rcml_interpreter test.rcml [параметры]"
 
-#: rcml_intepreter/main.cpp:307
-msgid "*****************Robot Control Center****************\n"
-msgstr ""
-
-#: rcml_intepreter/main.cpp:341
+#: rcml_intepreter/main.cpp:307 rcml_intepreter/main.cpp:341
 msgid "***************Thank You for using RCC!**************\n"
-msgstr ""
+msgstr "****************Спасибо за выбор RCC!***************\n"
 
 #: rcml_intepreter/modules.cpp:39
 #, c-format
 msgid "Thread Module Control %d (%p) started.\n"
-msgstr ""
+msgstr "Поток модуля управления %d (%p) начал работу.\n"
 
 #: rcml_intepreter/modules.cpp:42
 #, c-format
 msgid "Thread Module Control %d (%p) finished.\n"
-msgstr ""
+msgstr "Поток модуля управления %d (%p) завершил работу.\n"
 
 #: rcml_intepreter/modules.cpp:47
 #, c-format
 msgid "Thread Robot Control (%p) started.\n"
-msgstr ""
+msgstr "Поток управления роботом (%p) начал работу.\n"
 
 #: rcml_intepreter/modules.cpp:49
 #, c-format
 msgid "Thread Robot Control (%p) finished.\n"
-msgstr ""
+msgstr "Поток управления роботом (%p) завершил работу.\n"
 
 #: rcml_intepreter/modules.cpp:72
 msgid "Cant init robot module(s)..."
-msgstr ""
+msgstr "Не могу инициализировать модуль(и) робота..."
 
 #: rcml_intepreter/modules.cpp:85
 msgid "Cant init control module(s)..."
-msgstr ""
+msgstr "Не могу инициализировать модуль(и) управления..."
 
 #: rcml_intepreter/modules.cpp:161
 #, c-format
 msgid "Module Control (%d) finded SELF request.\n"
-msgstr ""
+msgstr "Модуль упрвления (%d) обнаружил SELF запрос.\n"
 
 #: rcml_intepreter/modules.cpp:165
 #, c-format
 msgid "Module Control (%d) finded robot %p.\n"
-msgstr ""
+msgstr "Модуль упрвления (%d) обнаружил робота %p.\n"
 
 #: rcml_intepreter/modules.cpp:194
 #, c-format
 msgid "Module Control (%d) havent free robots.\n"
-msgstr ""
+msgstr "Модуль упрвления (%d) не обнаружил свободных роботов.\n"
 
 #: rcml_intepreter/modules.cpp:209
 #, c-format
 msgid "Module Control (%d) finded FREE ROBOT request.\n"
-msgstr ""
+msgstr "Модуль упрвления (%d) обнаружил запрос на освобождение робота(FREE ROBOT).\n"
 
 #: rcml_intepreter/modules.cpp:219
 #, c-format
 msgid "Module Control (%d) start wait Robot Control Thread: %p.\n"
-msgstr ""
+msgstr "Модуль упрвления (%d) начал ожидание Потока Управления роботом: %p.\n"
 
 #: rcml_intepreter/modules.cpp:284 rcml_intepreter/modules.cpp:296
 #, c-format
 msgid "Robot Control %p (%s) added NEW function.\n"
-msgstr ""
+msgstr "Модуль Управления роботом %p (%s) добавил новую(NEW) функцию.\n"
 
 #: rcml_intepreter/modules.cpp:308
 #, c-format
 msgid "Robot Control %p added NEW function.\n"
-msgstr ""
+msgstr "Модуль Управления роботом %p добавил новую(NEW) функцию.\n"
 
 #: rcml_intepreter/modules.cpp:313
 msgid "Unexpected command mode!"
-msgstr ""
+msgstr "Задан неверный режим команд!"
 
 #: rcml_intepreter/modules.cpp:324
 #, c-format
 msgid "Robot control %p working...\n"
-msgstr ""
+msgstr "Работает управление роботом %p...\n"
 
 #: rcml_intepreter/modules.cpp:332
 #, c-format
 msgid "Robot Control %p finded NEW request\n"
-msgstr ""
+msgstr "Модуль Управления роботом %p обнаружил запрос NEW.\n"
 
 #: rcml_intepreter/modules.cpp:361
 #, c-format
 msgid "Robot Control (%p) finded DELETE request.\n"
-msgstr ""
+msgstr "Модуль Управления роботом (%p) обнаружил запрос DELETE.\n"
 
 #: rcml_intepreter/pcode_execute.cpp:154
 #, c-format
 msgid "Unknow asm command %d."
-msgstr ""
+msgstr "Неизвестная команда asm %d."
 
 #: rcml_intepreter/pcode_execute.cpp:297
 msgid "Unexpected wait flag value!"
-msgstr ""
+msgstr "Неверное значение флага ожидания!"
 
 #: rcml_intepreter/pcode_execute.cpp:433
 msgid "Incompatible mode of execute for user function."
-msgstr ""
+msgstr "Несовместимый режим исполнения для пользовательской функции."
 
 #: rcml_intepreter/pcode_execute.cpp:442
 #, c-format
 msgid "stack size = %d\n"
-msgstr ""
+msgstr "размер стэка = %d\n"
 
 #: rcml_intepreter/pcode_execute.cpp:476
 msgid "Unhandled exception!\n"
-msgstr ""
+msgstr "Необработанное исключение!\n"
 
 #: rcml_intepreter/pcode_execute.cpp:828
 msgid "Unknow WaitFlag for default send_package!"
-msgstr ""
+msgstr "Неизвестный флаг ожидания для send_package!"
 
 #: rcml_intepreter/pcode_execute.cpp:879
 msgid "Incompatible mode of execute for module function."
-msgstr ""
+msgstr "Несовместимый режим исполнения для функции модуля."
 
 #: module_wrapper/module_wrapper.cpp:24
 msgid "Unknown module API version!"
-msgstr ""
+msgstr "Неизвестная версия API модуля!"
 
 #: module_wrapper/module_wrapper.cpp:25
 msgid "Incompatible module API!"
-msgstr ""
+msgstr "несовместимое API модуля!"
 
 #: module_wrapper/module_wrapper.cpp:101
 #, c-format
 msgid "Can't load %s module: %s\n"
-msgstr ""
+msgstr "не могу загрузить %s модуля: %s\n"
 
 #: module_wrapper/module_wrapper.cpp:129 module_wrapper/module_wrapper.cpp:141
 #, c-format
 msgid "Can't find \"%s\" in module"
-msgstr ""
+msgstr "Не могу найти \"%s\" в модуле"
 
 #: module_wrapper/module_wrapper.cpp:151
 #, c-format
 msgid "IID \"%s\" already loaded!"
-msgstr ""
+msgstr "IID \"%s\" уже загружен!"
 
 #: module_wrapper/module_wrapper.cpp:156
 #, c-format
 msgid "Loaded %s module from: %s\n"
-msgstr ""
+msgstr "Загружен модуль %s из: %s\n"
 
 #: module_wrapper/module_wrapper.cpp:163
 msgid "  Mode: production\n"
-msgstr ""
+msgstr "  Режим: production\n"
 
 #: module_wrapper/module_wrapper.cpp:165
 msgid "  Module version: unknow\n"
-msgstr ""
+msgstr "  Версия модуля: неизвестна\n"
 
 #: module_wrapper/module_wrapper.cpp:170
 #, c-format
 msgid "  Mode: %s\n"
-msgstr ""
+msgstr "  Режим: %s\n"
 
 #: module_wrapper/module_wrapper.cpp:171
 msgid "production"
@@ -924,89 +866,89 @@ msgstr ""
 #: module_wrapper/module_wrapper.cpp:174
 #, c-format
 msgid "  Module version: %d\n"
-msgstr ""
+msgstr "  Версия модуля: %d\n"
 
 #: module_wrapper/module_wrapper.cpp:178
 #, c-format
 msgid "  API version: %d\n"
-msgstr ""
+msgstr "  Версия API: %d\n"
 
 #: module_wrapper/module_wrapper.cpp:181
 #, c-format
 msgid "In module by path: %s"
-msgstr ""
+msgstr "В модуле в каталоге: %s"
 
 #: module_wrapper/module_wrapper.cpp:203
 msgid "Unknown api version!"
-msgstr ""
+msgstr "Неизвестная версия API!"
 
 #: module_wrapper/module_wrapper.cpp:226
 msgid "Incompabilty API!"
-msgstr ""
+msgstr "Несовместимый API!"
 
 #: module_wrapper/module_wrapper.cpp:440
 msgid "wrong command index in functions:"
-msgstr ""
+msgstr "неверный индекс команды в функции:"
 
 #: module_wrapper/module_wrapper.cpp:456
 msgid "wrong axis index in axises:"
-msgstr ""
+msgstr "неверный индекс оси в осях:"
 
 #: module_wrapper/module_wrapper.cpp:815
 #, c-format
 msgid "Can't load module: %s\n"
-msgstr ""
+msgstr "Не могу загрузить модуль: %s\n"
 
 #: module_wrapper/module_wrapper.cpp:822
 #, c-format
 msgid "Unknown type of module: %s\n"
-msgstr ""
+msgstr "Неизвестен тип модуля: %s\n"
 
 #: module_wrapper/pcode_wrapper.cpp:67
 #, c-format
 msgid "Haven't %s production version of module with IID: %s\n"
-msgstr ""
+msgstr "Haven't %s production version of module with IID: %s\n"
 
 #: module_wrapper/pcode_wrapper.cpp:71
 #, c-format
-msgid "Please restart interpreter. Don't forget enable \"%s\" "
-msgstr ""
+msgid "Please restart interpreter. Don't forget enable \"%s\" module in config.ini!"
+msgstr "Пожалуйста перезапустите интерпретатор. Не забудьте включить модуль \"%s\" в config.ini!"
 
 #: module_wrapper/pcode_wrapper.cpp:89
 #, c-format
 msgid "Can't open pcode file: %s"
-msgstr ""
+msgstr "Не могу открыть файл псевдокода: %s"
 
 #: module_wrapper/pcode_wrapper.cpp:94
 msgid "Can't load header!"
-msgstr ""
+msgstr "Не могу загрузить заголовок псевдокода!"
 
 #: module_wrapper/pcode_wrapper.cpp:97
 msgid "Can't execute RCML lib!"
-msgstr ""
+msgstr "Не могу подключить(execute) библиотеку RCML!"
 
 #: module_wrapper/pcode_wrapper.cpp:100
 msgid "Can't load RCML program as lib!"
-msgstr ""
+msgstr "Не могу загрузить RCML программу как библиотеку!"
 
 #: module_wrapper/pcode_wrapper.cpp:103
 msgid "Can't find IID in the execute RCML file!"
-msgstr ""
+msgstr "Не могу найти IID в имсполняемом файле RCML!"
 
 #: module_wrapper/pcode_wrapper.cpp:267
 #, c-format
 msgid "Cant load pcode file: %s"
-msgstr ""
+msgstr "Не могу загрузить файл псевдокода: %s"
 
 #: module_wrapper/pcode_wrapper.cpp:277 module_wrapper/pcode_wrapper.cpp:379
 #, c-format
 msgid "PCode %d is not lib!"
-msgstr ""
+msgstr "Псевдокод(PCode) %d это не библиотека!"
 
 #: module_wrapper/pcode_wrapper.cpp:340
 #, c-format
 msgid "Start PCode (%d) map libs.\n"
-msgstr ""
+msgstr "Начато создание карты библиотек из псевдокода (%d) .\n"
 
 #: module_wrapper/pcode_wrapper.cpp:355
 #, c-format
@@ -1021,13 +963,12 @@ msgstr ""
 #: module_wrapper/pcode_wrapper.cpp:393
 #, c-format
 msgid "Cant find function: %s"
-msgstr ""
+msgstr "Не могу найти функцию: %s"
 
 #: module_wrapper/rcml_common/pcode_header.cpp:172
 msgid "This is not RCML pcode file!"
-msgstr ""
+msgstr "Это не файл псевдокода RCML!"
 
-#: module_wrapper/rcml_common/pcode_header.cpp:188
-#: module_wrapper/rcml_common/pcode_header.cpp:204
+#: module_wrapper/rcml_common/pcode_header.cpp:188 module_wrapper/rcml_common/pcode_header.cpp:204
 msgid "Unknown PCode version"
-msgstr ""
+msgstr "Неизвестная версия псевдокода"
